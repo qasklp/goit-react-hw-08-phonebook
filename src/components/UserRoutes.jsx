@@ -3,7 +3,6 @@ import { lazy, Suspense } from "react";
 
 import PrivateRoute from "./modules/PrivateRoute/PrivateRoute";
 import PublicRoute from "./modules/PublicRoute/PublicRoute";
-import { NotFoundPage } from "./modules/NotFoundPage/NotFoundPage";
 
 const ContactsPage = lazy(() => import("./pages/ContactsPage/ContactsPage"));
 const RegistrationPage = lazy(() => import("./pages/RegistrationPage/RegistrationPage"));
@@ -20,7 +19,7 @@ export const UserRoutes = () => {
             <Route element={<PrivateRoute />}>
                 <Route path="/contacts" element={<ContactsPage />} />
             </Route>
-            <Route path="*" element={<NotFoundPage />} />
+            <Route path="*" element={<LogInPage />} />
         </Routes>
     </Suspense>;
 }
