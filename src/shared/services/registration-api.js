@@ -11,7 +11,7 @@ const setToken = token => {
     instanse.defaults.headers.authorization = "";
 }
 
-export const signup = async(data) => {
+export const signup = async (data) => {
     const { data: result } = await instanse.post("/users/signup", data);
     instanse.defaults.headers.authorization = `Bearer ${result.token}`;
     return result;
