@@ -13,7 +13,7 @@ const UesrMenu = () => {
     const email = useSelector(userEmail);
     return <div className={styles.userMenu}>
         <p className={styles.text}>{email}</p>
-        <button type='button' onClick={onLogout}>Logout</button>
+        <button type='button' className={styles.button} onClick={onLogout}>Logout</button>
     </div>;
 }
 

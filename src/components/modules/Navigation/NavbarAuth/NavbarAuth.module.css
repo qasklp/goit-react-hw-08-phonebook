@@ -7,10 +7,10 @@
 }
 
 .link:hover{
-    color: blue;
+    color: darkred;
 }
 
 .link:global(.active) {
-    color: blue;
+    color: darkred;
     font-weight: bold;
 }
