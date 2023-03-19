@@ -1,0 +1,16 @@
+.link{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px, 15px;
+
+}
+
+.link:hover{
+    color: blue;
+}
+
+.link:global(.active) {
+    color: blue;
+    font-weight: bold;
+}
